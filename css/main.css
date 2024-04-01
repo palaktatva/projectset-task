@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.main-section {
+    padding: 5.4% 7.1%;
+}
+
+.main-section .heading {
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.main-section .tab-accordium-content-wrapper {
+    background: #F8F9FC;
+    border: 1px solid #d5dfff;
+    border-radius: 24px;
+    padding: 30px 40px;
+}
+
+.tab-accordium-content-wrapper .heading-block {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-accordium-content-wrapper .heading-block .list-wrapper {
+    margin-bottom: 68px;
+}
+
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul {
+    display: flex;
+    margin: 0 -4px;
+}
+
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li {
+    padding: 0 4px;
+}
+
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li a {
+    padding: 12px;
+    border-radius: 32px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s all;
+}
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li.active a{   
+    background-color: #2F64FF;
+}
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li.active a span{   
+    color: #fff;
+}
+.heading-block .list-wrapper ul li a em{
+    position: relative;
+    min-width: 24px;
+    margin-right: 8px;
+    line-height: 0;
+}
+.tab-accordium-content-wrapper .heading-block .list-wrapper span{
+    color: #747272;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li a em .normal-icon{
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li.active a em .white-icon{
+    opacity: 1;
+}
+.tab-accordium-content-wrapper .heading-block .list-wrapper ul li.active a em .normal-icon{
+    opacity: 0;
+}
+.inner-content .content-wrapper {
+    display: flex;
+    margin: 0 -20px;
+}
+.inner-content .content-wrapper .content{
+    flex: 39%;
+    max-width: 39%;
+    padding: 0 20px;
+}
+.inner-content .content-wrapper .content p{
+    color: #373737;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+.inner-content .content-wrapper .video-content-outer-wrapper{
+    flex: 0 0 61%;
+    max-width: 61%;
+    padding: 0 20px;
+}
+.inner-content .content-wrapper .video-content {
+    position: relative;
+    width: 100%;
+    padding-bottom: 57.2%;
+    overflow: hidden;
+    border-radius: 24px;
+}
+.inner-content .content-wrapper .video-content span{
+    width: 88px;
+    height: 88px;
+    background-color: #fff;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.video-content .image-wrapper{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.inner-content .content-wrapper .video-content video {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.tab-accordium-content-wrapper .tab-accordiun-content-block .inner-content:not(.active){
+    display: none;
+}
