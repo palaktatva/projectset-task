@@ -72,7 +72,7 @@ jQuery(document).ready(function () {
             jQuery(this).closest('.tab-accordion-content-wrapper').find('.inner-content[data-target= "' + _link + '"]').siblings().fadeOut(0);
             jQuery(this).closest('.tab-accordion-content-wrapper').find('.inner-content[data-target= "' + _link + '"]').siblings().each(function () {
                 jQuery(this).find("video").removeAttr('controls');
-                jQuery(this).find(".button-wrapper").show();
+                jQuery(this).find("span").show();
                 jQuery(this).find("video").get(0).pause();
                 jQuery(this).find(".video-content").removeClass("video-control");
             });
@@ -82,8 +82,8 @@ jQuery(document).ready(function () {
     });
 
     // video set jQuery
-    jQuery('.video-content .image-wrapper span').click(function () {
-        jQuery(this).closest(".video-content").find(".button-wrapper").hide();
+    jQuery('.video-content .poster-image span').click(function () {
+        jQuery(this).closest(".video-content").find("span").hide();
         jQuery(this).closest(".video-content").find("video").removeAttr("poster").attr('controls', true).get(0).play();
         jQuery(this).closest(".video-content").addClass("video-control");
     });
